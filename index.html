@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicorn ICT Trading</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0b0f14;
+            --bg-light: #121826;
+            --primary: #7c8cff;
+            --text: #e6e9ef;
+            --muted: #9aa4b2;
+            --border: #1e2636;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0b0f14, #121826);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+
+        .hero span {
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: var(--primary);
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 140, 255, 0.3);
+        }
+
+        /* ABOUT */
+        .about {
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+
+        /* SERVICES */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            background: linear-gradient(135deg, #121826, #0b0f14);
+            border-radius: 12px;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 14px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background: #0b0f14;
+            color: var(--text);
+            resize: none;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Maîtrisez le <span>modèle Unicorn</span><br> basé sur ICT</h1>
+            <p>
+                Une approche professionnelle du trading institutionnel,
+                conçue pour les traders exigeants qui recherchent précision,
+                structure et cohérence sur les marchés financiers.
+            </p>
+            <a href="#contact" class="btn">Me contacter</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>Le modèle Unicorn – ICT</h2>
+        <p>
+            Le modèle Unicorn est une stratégie avancée inspirée des concepts
+            ICT (Inner Circle Trader), utilisée pour identifier des zones
+            de haute probabilité basées sur la liquidité, la structure du marché
+            et le timing institutionnel.
+        </p>
+        <p>
+            Cette méthodologie permet de trader avec discipline,
+            en éliminant le hasard et en s’alignant sur les mouvements
+            des acteurs majeurs du marché.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section>
+        <h2>Services proposés</h2>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Coaching Trading</h3>
+                <p>
+                    Coaching individuel ou en petit groupe pour comprendre
+                    en profondeur le modèle Unicorn, améliorer votre psychologie
+                    et construire une routine de trader professionnel.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Configuration Setup</h3>
+                <p>
+                    Mise en place complète de votre environnement de trading :
+                    graphiques, timeframes, règles précises et validation
+                    de vos setups Unicorn.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Accompagnement Personnalisé</h3>
+                <p>
+                    Suivi personnalisé sur plusieurs semaines avec analyse
+                    de trades, corrections, optimisation de votre exécution
+                    et adaptation à votre profil de trader.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Prêt à passer au niveau supérieur ?</h2>
+        <p>
+            Rejoignez une approche sérieuse et institutionnelle du trading
+            basée sur le modèle Unicorn et les concepts ICT.
+        </p>
+        <a href="#contact" class="btn">Démarrer maintenant</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p style="text-align:center;">
+            Une question ? Un projet ? Laissez-moi un message.
+        </p>
+
+        <form>
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Votre message..." required></textarea>
+            <button class="btn" type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2026 – Unicorn ICT Trading • Tous droits réservés
+    </footer>
+
+    <script>
+        // Animation simple au scroll
+        const sections = document.querySelectorAll("section");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = "translateY(40px)";
+            section.style.transition = "0.8s ease";
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
